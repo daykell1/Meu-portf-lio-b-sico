@@ -1,0 +1,39 @@
+@import url("global.css");
+
+/* ===== HABILIDADES ===== */
+.habilidades {
+  background: #ede7f6;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.habilidades h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #3d2849;
+}
+
+.habilidades ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.habilidades li {
+  background: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #3d2849;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 337px;
+  font-size: 0.9rem;
+}

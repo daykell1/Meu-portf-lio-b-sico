@@ -1,0 +1,137 @@
+@import url("global.css");
+
+/* ===== PROJETOS ===== */
+.projetos {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.projetos h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #3d2849;
+}
+
+.grid-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card1 {
+  background-image: url(/img/unnamed\ \(1\).png);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+ 
+
+}
+
+
+.card2 {
+  background-image: url(/img/unnamed.png);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card1:hover {
+  transform: translateY(-5px);
+}
+
+.card1 h3 {
+  margin-bottom: 10px;
+  color: #3d2849;
+}
+
+.card2:hover {
+  transform: translateY(-5px);
+}
+
+.card2 h3 {
+  margin-bottom: 10px;
+  color: #3d2849;
+}
+
+.card1 a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  background: #3d2849;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.card1 a:hover {
+  background: #5c3d6f;
+}
+
+
+.card2 a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  background: #3d2849;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.card2 a:hover {
+  background: #5c3d6f;
+}
+
+/* .card1 h3,
+.card2 h3{
+  margin-bottom: 10px;
+  color: #3d2849;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.7); 
+  padding: 5px 10px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.card1 p,
+.card2 p {
+  margin-bottom: 10px;
+  color: #3d2849;
+  font-size: 1rem;          
+  font-weight: normal;    
+  background: rgba(255, 255, 255, 0.6); 
+  padding: 3px 8px;
+  border-radius: 4px;
+  display: inline-block;
+} */
+
+/* Nome do projeto (título) */
+.card1 h3,
+.card2 h3 {
+  margin-bottom: 10px;
+  color: #3d2849;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.85); /* caixinha clara */
+  padding: 5px 12px;
+  border-radius: 6px;
+  
+}
+
+/* Descrição (parágrafo) */
+.card1 h4,
+.card2 h4 {
+  margin-bottom: 10px;
+  color: #3d2849;
+  font-size: 1rem;         /* menor que o título */
+  font-weight: normal;     /* sem negrito */
+  background: rgba(255, 255, 255, 0.6); /* mais suave */
+  padding: 4px 10px;
+  border-radius: 4px;
+
+}
