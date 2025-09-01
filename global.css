@@ -49,3 +49,22 @@ footer {
   padding: 15px 0;
   margin-top: auto;
 }
+
+/* FOOTER */
+
+
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  /* Regras para telas de até 768px (tablets e celulares) */
+
+  .menu ul {
+    flex-direction: column; /* Empilha os itens do menu verticalmente */
+    gap: 15px; /* Reduz o espaçamento entre os itens */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  .menu ul li a {
+    font-size: 1.2rem; /* Aumenta um pouco o tamanho da fonte para melhor leitura */
+  }
+}
