@@ -1,0 +1,199 @@
+ @import url("global.css");
+
+/* body {
+  background-image: url(/img/Gemini_Generated_Image_m8mcgmm8mcgmm8mc.png);
+  background-size: cover;   
+  background-position: center; 
+  background-repeat: no-repeat; 
+  min-height: 100vh;
+}  */
+
+/* #avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #3d2849;
+  object-fit: cover;
+  margin-right: 15px;
+ 
+} */
+
+ /* #bemVindo {
+  width: 600px;
+  height: 350px;
+  margin-right: 15px; 
+  
+} */
+
+/* ===== HOME ===== */
+/* .home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #3d2849;
+} */
+
+/* .home p {
+  font-size: 1.2rem;
+  color: #555;
+   background: rgba(255, 255, 255, 0.6); 
+}
+
+.apresentacao_links {
+  display: flex;
+  justify-content: center; 
+  gap: 15px;
+  margin-top: -46px; 
+} */
+
+/* .apresentacao_links_link {
+  text-decoration: none;
+  background: #3d2849;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.3s;
+  text-align: center;
+}
+
+.apresentacao_links_link:hover {
+  background: #5c3d6f;
+} */
+
+
+/* ===== FOOTER ===== */
+/* footer {
+  background: #3d2849;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 81px;
+  font-size: 0.9rem;
+} */
+
+
+/* ===== RESPONSIVIDADE ===== */
+/* @media (max-width: 768px) {
+  .home h1 {
+    font-size: 2rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
+
+  #avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  #bemVindo {
+    max-width: 90%;
+    margin: 10px auto;
+  }
+
+  .apresentacao_links_link {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 30px 10px;
+  }
+
+  .home h1 {
+    font-size: 1.6rem;
+  }
+
+  #avatar {
+    width: 35px;
+    height: 35px;
+  }
+
+  #bemVindo {
+    max-width: 100%;
+  }
+
+  .apresentacao_links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .apresentacao_links_link {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+} */ */
+
+
+main {
+  display: flex; /* Define o container como flex */
+  flex-direction: column; /* Empilha os itens verticalmente */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens verticalmente na tela */
+  padding: 20px; /* Adiciona espaçamento interno */
+  min-height: calc(100vh - 120px); /* Ajusta a altura para preencher o espaço */
+}
+
+/* Para o menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Adiciona espaço entre os itens do menu */
+}
+
+/* Para o rodapé com os botões */
+footer {
+  display: flex;
+  flex-direction: column; /* Ou row, se quiser um do lado do outro */
+  align-items: center;
+  gap: 15px; /* Espaço entre os botões */
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  /* Para tablets e telas maiores */
+
+  /* Menu de navegação na horizontal */
+  header .menu {
+    flex-direction: row; /* Coloca os links lado a lado */
+    justify-content: space-between; /* Espaço entre eles */
+    width: 100%;
+  }
+
+  /* Main content com layout de 2 colunas */
+  main {
+    flex-direction: row; /* Altera para layout em linha */
+    justify-content: center;
+    gap: 50px; /* Espaço entre a imagem e o texto */
+  }
+
+  /* Rodapé com botões na horizontal */
+  footer {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Tamanhos de fonte responsivos */
+h1 { font-size: 2.5rem; }
+p { font-size: 1rem; }
+
+/* Imagem responsiva */
+.image-avatar {
+  max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}

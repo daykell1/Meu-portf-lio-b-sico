@@ -20,7 +20,8 @@
 }
 
 .destaque {
-  color: #3d2849;
+  color: #50395e;
+  font-size: 1.1rem; ;
 }
 
 .apresentacao_conteudo_texto {
@@ -52,9 +53,11 @@
   border-radius: 20px;
   border: none;
   box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-  padding: 8px;
+  padding: 10px;
   background: #3d2849;
+  margin-top: 100px;
 }
+
 
 
 #avatar {
@@ -75,7 +78,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 15px 0;
-  margin-top: 171px;
+  margin-top: -5px;
   font-size: 0.9rem;
 }
 

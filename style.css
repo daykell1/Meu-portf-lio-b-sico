@@ -1,8 +1,11 @@
 @import url("global.css");
 
-body{
-    /* background-image: url(/img/background.png); */
-     background-image: url(/img/Gemini_Generated_Image_m8mcgmm8mcgmm8mc.png);
+body {
+  background-image: url(/img/Gemini_Generated_Image_m8mcgmm8mcgmm8mc.png);
+  background-size: cover;   /* Faz a imagem cobrir a tela */
+  background-position: center; /* Centraliza */
+  background-repeat: no-repeat; /* Evita repetição */
+  min-height: 100vh;
 }
 
 #avatar {
@@ -75,4 +78,61 @@ footer {
   padding: 15px 0;
   margin-top: 81px;
   font-size: 0.9rem;
+}
+
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 2rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
+
+  #avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  #bemVindo {
+    max-width: 90%;
+    margin: 10px auto;
+  }
+
+  .apresentacao_links_link {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 30px 10px;
+  }
+
+  .home h1 {
+    font-size: 1.6rem;
+  }
+
+  #avatar {
+    width: 35px;
+    height: 35px;
+  }
+
+  #bemVindo {
+    max-width: 100%;
+  }
+
+  .apresentacao_links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .apresentacao_links_link {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
 }
