@@ -1,11 +1,11 @@
 @import url("global.css");
 
 /* ===== HABILIDADES ===== */
-.habilidades {
+ .habilidades {
   background: #ede7f6;
   padding: 60px 10%;
   text-align: center;
-}
+} 
 
 .habilidades h2 {
   font-size: 2rem;

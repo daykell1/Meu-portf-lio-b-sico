@@ -11,7 +11,7 @@
 }
 
 .apresentacao_conteudo {
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .apresentacao_conteudo_titulo {
@@ -75,77 +75,10 @@ footer {
   color: #fff;
   text-align: center;
   padding: 15px 0;
-  margin-top: 125px;
+  margin-top: 171px;
   font-size: 0.9rem;
 }
 
-
-/* .gato {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  width: 125px;
-  height: 125px;
-  background-image: url('gato.gif');
-  background-size: contain;
-  background-repeat: no-repeat;
-  animation: andar 30s linear infinite;
-} */
-
-/*gato andando na tela*/
-/* 
-@keyframes andar {
-  0% {
-    left: -100px;
-    bottom:20px;
-    transform: scaleX(1);
-  }
-
-  25% {
-    left: 100vw;
-    bottom:20px;
-    transform: scaleX(1); 
-  }
-
-  26% {
-    bottom:300px;
-    left:100vw;
-    transform: scaleX(-1); 
-  }
-
-
-  50% {
-    bottom:300px;
-    transform: scaleX(-1);
-    left: -100px; 
-  }
-
-  51% {
-    bottom:600px;
-    transform: scaleX(1);
-    left: -100px; 
-  }
-
-  75%{
-    bottom:600px;
-    transform: scaleX(1);
-    left:100vw;
-  }
-
-  76%{
-    bottom:20px;
-    left: 100vw;
-    transform: scaleX(-1);
-  }
-
-
-
-  100% {
-    left: -100px;
-    bottom:20px;
-    transform: scaleX(-1);
-  }
-}  */
 
 
 /* ===== RESPONSIVIDADE ===== */
@@ -214,3 +147,94 @@ footer {
   }
 }
 
+
+/* Estilos para o Carrossel */
+.carrossel-container {
+    position: relative; /* Para posicionar os botões */
+    width: 100%;
+    max-width: 700px; /* Limita a largura do carrossel */
+    margin: 30px auto; /* Centraliza e adiciona espaço */
+    overflow: hidden; /* Esconde os slides que não estão ativos */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fcfcfc; /* Fundo do carrossel */
+    min-height: 250px; /* Garante uma altura mínima */
+    display: flex;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.carrossel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Animação suave na troca de slides */
+    width: 100%;
+    height: 100%; /* Ocupa a altura do container */
+}
+
+.slide {
+    min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel-slides */
+    padding: 25px 40px;
+    text-align: center;
+    box-sizing: border-box; /* Garante que padding não aumente a largura */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o texto do slide verticalmente */
+    align-items: center; /* Centraliza o texto horizontalmente */
+}
+
+.slide h2 {
+    font-size: 1.8rem;
+    color: #3d2849;
+    margin-bottom: 15px;
+}
+
+.slide p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+.carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(61, 40, 73, 0.7); /* Roxo com transparência */
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%; /* Botões redondos */
+    z-index: 10; /* Garante que os botões fiquem acima dos slides */
+    transition: background-color 0.3s ease;
+}
+
+.carrossel-btn:hover {
+    background-color: rgba(61, 40, 73, 1); /* Roxo mais forte no hover */
+}
+
+.carrossel-btn.prev {
+    left: 15px;
+}
+
+.carrossel-btn.next {
+    right: 15px;
+}
+
+/* Opcional: Ajuste para a imagem principal ficar melhor ao lado do carrossel */
+#minhaImagem {
+    align-self: flex-start; /* Alinha a imagem ao topo se o carrossel for mais alto */
+}
+
+/* Responsividade para o carrossel */
+@media (max-width: 768px) {
+    .carrossel-btn {
+        padding: 8px 12px;
+        font-size: 1.2rem;
+    }
+    .slide h2 {
+        font-size: 1.5rem;
+    }
+    .slide p {
+        font-size: 1rem;
+    }
+}
