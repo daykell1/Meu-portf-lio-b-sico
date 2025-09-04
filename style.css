@@ -21,7 +21,6 @@ body {
 #bemVindo {
   width: 600px;
   height: 350px;
-  margin-right: 15px;
   /* box-shadow: 0 0 8px rgba(34, 212, 253, 0.6); */
 }
 
@@ -83,8 +82,10 @@ footer {
 
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 768px) {
-  .home h1 {
-    font-size: 2rem;
+
+  .home{
+    padding: 0;
+    gap: 0;
   }
 
   .home p {
@@ -97,23 +98,40 @@ footer {
   }
 
   #bemVindo {
-    max-width: 90%;
-    margin: 10px auto;
+    max-width: 50%;
+   
+  }
+
+  .body{
+    background-image: url(/img/Gemini_Generated_Image_m8mcgmm8mcgmm8mc.png);
+    background-size:20%;   /* Faz a imagem cobrir a tela */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+ 
   }
 
   .apresentacao_links_link {
     padding: 8px 15px;
     font-size: 0.9rem;
+    max-width: 50%;
+  }
+
+  .apresentacao_links{
+    align-items: center;
+  
   }
 }
 
+
 @media (max-width: 480px) {
   .home {
-    padding: 30px 10px;
+    padding: 0;
+    margin: 0;
   }
 
-  .home h1 {
-    font-size: 1.6rem;
+  img{
+    margin: 0;
+    padding:0;
   }
 
   #avatar {
@@ -136,3 +154,4 @@ footer {
     font-size: 1rem;
   }
 }
+

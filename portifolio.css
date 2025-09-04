@@ -1,5 +1,9 @@
 @import url("global.css");
 
+body{
+  background-image: url(/img/backgroundPortifolio.png);
+}
+
 /* ===== APRESENTAÇÃO (Sobre Mim) ===== */
 .apresentacao {
   display: flex;
@@ -60,6 +64,8 @@
 
 
 
+
+
 #avatar {
   width: 50px;
   height: 50px;
@@ -88,6 +94,11 @@ footer {
 
 /* Telas médias (tablets) */
 @media (max-width: 1024px) {
+
+  body{
+    overflow: auto;
+    background-image: url(/img/backgroundPortifolio.png);
+  }
   .apresentacao {
     padding: 40px 5%;
   }
@@ -241,3 +252,78 @@ footer {
         font-size: 1rem;
     }
 }
+
+
+
+/* .gato {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 125px;
+  height: 125px;
+  background-image: url('./img/gato.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: andar 30s linear infinite;
+  z-index: 10; 
+}
+
+@keyframes andar {
+  0% {
+    left: -100px;
+    bottom:20px;
+    transform: scaleX(1);
+  }
+
+  25% {
+    left: 100vw;
+    bottom:20px;
+    transform: scaleX(1); 
+  }
+
+  26% {
+    bottom:300px;
+    left:100vw;
+    transform: scaleX(-1); /
+  }
+
+
+  50% {
+    bottom:300px;
+    transform: scaleX(-1);
+    left: -100px; 
+  }
+
+  51% {
+    bottom:600px;
+    transform: scaleX(1);
+    left: -100px; 
+  }
+
+  75%{
+    bottom:600px;
+    transform: scaleX(1);
+    left:100vw;
+  }
+
+  76%{
+    bottom:20px;
+    left: 100vw;
+    transform: scaleX(-1);
+  }
+
+
+
+  100% {
+    left: -100px;
+    bottom:20px;
+    transform: scaleX(-1);
+  }
+} 
+
+@media (max-width: 600px) {
+  .gato {
+    display: none;
+  }
+} */
+

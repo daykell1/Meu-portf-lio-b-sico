@@ -110,3 +110,10 @@
   border-radius: 4px;
 
 }
+
+footer {
+  background: #3d2849;
+  color: #fff;
+  text-align: center;
+  margin-top: 2px;
+}
