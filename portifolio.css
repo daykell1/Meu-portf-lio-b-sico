@@ -207,11 +207,12 @@ footer {
     line-height: 1.7;
 }
 
+
 .carrossel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(61, 40, 73, 0.7); /* Roxo com transparência */
+    background-color: rgba(61, 40, 73, 0.7); 
     color: #fff;
     border: none;
     padding: 12px 18px;
@@ -222,16 +223,17 @@ footer {
     transition: background-color 0.3s ease;
 }
 
+
 .carrossel-btn:hover {
     background-color: rgba(61, 40, 73, 1); /* Roxo mais forte no hover */
 }
 
 .carrossel-btn.prev {
-    left: 15px;
+    left: -10px;
 }
 
 .carrossel-btn.next {
-    right: 15px;
+    right: -10px;
 }
 
 /* Opcional: Ajuste para a imagem principal ficar melhor ao lado do carrossel */
