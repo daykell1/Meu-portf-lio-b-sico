@@ -1,12 +1,15 @@
 @import url("global.css");
 
 body{
+
   background-image: url("/img/backgroundPortifolio.png");
+
 }
 
 main{
 display: flex;
 position: relative;
+margin: 0px;
 }
 
 
@@ -30,6 +33,13 @@ position: relative;
   flex-wrap: wrap;
 } 
 
+ul img{
+  height: 80px;
+  width: auto;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
 
 .habilidades li {
   background: #fff;
@@ -39,25 +49,30 @@ position: relative;
 }
 
 #gatocomputador{
-   align-items: center;
    position: relative;
    left: 45%;
-  
+   top:-300px;
+   width: 150px;
+   height: 150px;
 }
+
+
 #gato2computador{
    align-items: center;
    position: relative;
    left: 43.5%;
-   width: 200px;
-   height: 200px;
+   width: 100px;
+   height: 100px;
    border-radius: 1cm;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-} */
+ 
+} 
 
 #habilidades5{
   position: absolute;
-  left: 9px;
-  margin-top: 100px;
+  left: 900px;
+  margin-top: 80px;
+  width: 400px;
+  height: 400px;
 }
 
 
@@ -67,7 +82,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 15px 0;
-  margin-top: 107px;
   font-size: 0.9rem;
+  margin-top: 37px;
 }
 
